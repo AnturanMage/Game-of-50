@@ -17,7 +17,7 @@ def init():                           #This is the topmost level of the program.
         game()
         Round += 1
     print('The games of 50 are over. Player 1 won %d times, and Player 2 won %d times.' % (one, two))
-    redo = input('Play again? (y/n)\n')
+    redo = input('Restart Program? (y/n)\n')
     if redo == 'y':
         init()
     elif redo == 'n':
@@ -57,7 +57,7 @@ def playeronemove(strat, numlist):    #Defines Player one's behavior. Player one
         if not numlist:
             numlist.append(1)
         else:
-            numlist.append(random.randint(1, 6))
+            numlist.append(7-numlist[-1])
     else:
         numlist.append(random.randint(1, 6))
 
