@@ -3,7 +3,7 @@ one = 0
 two = 0
 
 
-def init():                           #This is the topmost level of the program. It initializes the program takes user input to define Player One's strategy and the number of games to be played.
+def init():                           #This is the topmost level of the program. It initializes the program, takes user input to define Player One's strategy and the number of games to be played.
     global one
     global two
     global Round
